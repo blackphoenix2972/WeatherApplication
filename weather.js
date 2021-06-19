@@ -26,14 +26,14 @@ async function getDisplayWeatherInformation() {
     let unix = data.sys.sunrise;
     let date = new Date(unix * 1000);
     let sunrise = date.toTimeString().slice(0, 5);
-    document.getElementById("sunriseTime").innerText = sunrise + '\nSunrise';
+    // document.getElementById("sunriseTime").innerText = sunrise + '\nSunrise';
 
     console.log(date.toTimeString().slice(0, 5) + ' AM');
     unix = data.sys.sunset;
     date = new Date(unix * 1000);
 
     let sunset = date.toTimeString().slice(0, 5);
-    document.getElementById("sunsetTime").innerText = sunset + '\nSunset';
+    // document.getElementById("sunsetTime").innerText = sunset + '\nSunset';
 
     console.log(date.toTimeString().slice(0, 8) + ' PM');
 
@@ -49,7 +49,7 @@ async function getDisplayWeatherInformation() {
     console.log(maxTemp + ' High');
     console.log(minTemp + 'Low');
     document.getElementById("lowTemp").innerText = minTemp + '°';
-    document.getElementById("windSpeed").innerText = windSpeed + 'km/hr\nWind';
+    document.getElementById("windSpeed").innerText = Math.round(convert) + ' km/hr';
 
 
 }

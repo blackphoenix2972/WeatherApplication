@@ -13,8 +13,20 @@ body {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.left-border {
+    border-left: 1px solid black;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    text-align: center;
 }
 
 main {
@@ -35,6 +47,13 @@ main {
     font-size: 20px;
     padding: 30px;
     margin: .6em;
+}
+
+.box {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 5px 7px black;
 }
 
 .flexbox {
@@ -66,6 +85,17 @@ main {
 
 .information h1 {
     background-color: violet;
+}
+
+.row input {
+    font-size: 30px;
+    ;
+    padding-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 5px 7px #888888;
+    ;
 }
 
 .box-input {
