@@ -1,0 +1,126 @@
+body {
+    background-color: #29539b;
+    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    background-size: cover;
+    background-position: top;
+}
+
+.background-image {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+main {
+    margin-left: 27%;
+    display: flex;
+    color: black;
+    justify-content: center;
+    background-color: rgb(165, 165, 165);
+    border: white 3px solid;
+    border-radius: 16px 0 16px 0;
+    width: 50%;
+}
+
+.background {
+    background-color: rgb(0, 0, 88, 0.3);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    margin: .6em;
+}
+
+.flexbox {
+    display: flex;
+    background-color: rgb(0, 0, 88, 0.3);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.flexbox2 {
+    display: flex;
+}
+
+.flexbox2>div {
+    margin: .6em;
+    flex: 100%;
+    flex-flow: row wrap;
+}
+
+.flexbox>div {
+    flex-direction: row;
+    padding: 10%;
+}
+
+.box {
+    flex-direction: column;
+}
+
+.information h1 {
+    background-color: violet;
+}
+
+.box-input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #DF8E00;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 10px;
+    }
+    .flexbox {
+        display: flex;
+        background-color: rgb(0, 0, 88, 0.3);
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+    .flexbox2>div {
+        flex: 100%;
+        font-size: 20px;
+    }
+    .flexbox>div {
+        flex-direction: column;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .information h1 {
+        background-color: violet;
+    }
+    .box-input {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 16px 0px 16px 0px;
+        border-bottom: 3px solid #DF8E00;
+        color: #313131;
+        font-size: 20px;
+        font-weight: 300;
+        transition: 0.2s ease-out;
+    }
+}
